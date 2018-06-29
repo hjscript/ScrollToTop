@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>回到顶部</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<span id="toTop" class="toTop"></span>
+	
+	<script type="text/javascript" src="scrollToTop.js"></script>
+	<script>
+    // ie7 下传入元素 ie8 及以上可以传入选择符字符串
+    var topElement = document.getElementById("toTop");
+    var toTop = new ScrollToTop(topElement, {
+    	showWhen: 200,
+    	speed: 200
+    })
+  </script>
+</body>
+</html>
